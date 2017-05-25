@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="1" name="TILESIZE" sid="398755621085684" static="0" type="number">64</variable>
+        <event-block sid="456627827422706">
+            <conditions>
+                <condition id="0" name="On clicked" sid="545019966438107" type="NewLayout" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="131643098443908">
+            <conditions>
+                <condition id="0" name="On function" sid="509692913081987" type="Function">
+                    <param id="0" name="Name">&quot;FillWithEmptyTiles&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
