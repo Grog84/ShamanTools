@@ -4,8 +4,8 @@
     <name>Event sheet 1</name>
     <events>
         <variable constant="0" name="CurrentLevelDump" sid="447889651693935" static="0" type="text"></variable>
-        <variable constant="1" name="X_OFFSET" sid="672447417247658" static="0" type="number">96</variable>
-        <variable constant="1" name="Y_OFFSET" sid="417412258568926" static="0" type="number">96</variable>
+        <variable constant="1" name="X_OFFSET" sid="672447417247658" static="0" type="number">80</variable>
+        <variable constant="1" name="Y_OFFSET" sid="417412258568926" static="0" type="number">80</variable>
         <variable constant="0" name="Map_x" sid="349233587194178" static="0" type="number">0</variable>
         <variable constant="0" name="Map_y" sid="705398743728984" static="0" type="number">0</variable>
         <variable constant="0" name="Map_xlim" sid="188856971793343" static="0" type="number">0</variable>
@@ -14,7 +14,7 @@
         <variable constant="1" name="MINSIZE_Y" sid="149905189053418" static="0" type="number">18</variable>
         <variable constant="1" name="MAXSIZE_X" sid="955872552888831" static="0" type="number">200</variable>
         <variable constant="1" name="MAXSIZE_Y" sid="922062876706189" static="0" type="number">100</variable>
-        <variable constant="1" name="TILESIZE" sid="398755621085684" static="0" type="number">64</variable>
+        <variable constant="1" name="TILESIZE" sid="398755621085684" static="0" type="number">32</variable>
         <event-block sid="475651898507157">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="599279485896610" type="System" />
@@ -61,6 +61,13 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="502430412664215" type="CheckMap">
+                    <param id="0" name="Pin to">Frame</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="351236989963961" type="InvisibleButton">
+                    <param id="0" name="Frame number">Self.ID</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="361733960041951" type="BrushArea">
                     <param id="0" name="Pin to">Frame</param>
                     <param id="1" name="Mode">0</param>
                 </action>
@@ -176,8 +183,8 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="474768368540223" type="Frame">
-                            <param id="0" name="X">960</param>
-                            <param id="1" name="Y">540</param>
+                            <param id="0" name="X">400</param>
+                            <param id="1" name="Y">272</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -314,11 +321,11 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="704050940494275" type="System">
                                     <param id="0" name="Variable">Map_x</param>
-                                    <param id="1" name="Value">Map_xlim - 8</param>
+                                    <param id="1" name="Value">Map_xlim - 16</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="835591697256634" type="System">
                                     <param id="0" name="Variable">Map_y</param>
-                                    <param id="1" name="Value">Map_ylim - 2</param>
+                                    <param id="1" name="Value">Map_ylim - 4</param>
                                 </action>
                                 <action id="0" name="Call function" sid="532510085082203" type="Function">
                                     <param id="0" name="Name">&quot;SetArraySize&quot;</param>
@@ -382,7 +389,29 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="655555053940751">
+                            <conditions />
+                            <actions>
+                                <action id="-24" name="Move to top" sid="419468186832928" type="TileBrush" />
+                            </actions>
+                        </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="241983943825288">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="266529298069580" type="Mouse">
+                            <param id="0" name="Object">Tile</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="673173830962365" type="Mouse">
+                            <param id="0" name="Object">BrushArea</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="792320225063860" type="TileBrush">
+                            <param id="0" name="X">Tile.X</param>
+                            <param id="1" name="Y">Tile.Y</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -404,6 +433,47 @@
                         <action id="-9" name="Set value" sid="875138405943366" type="System">
                             <param id="0" name="Variable">CurrentLevelDump</param>
                             <param id="1" name="Value">MapArray.AsJSON</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="946256881428481">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="746906466142275" type="System">
+                                    <param id="0" name="Object">Tile</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="209647402383313" type="Tile">
+                                    <param id="0" name="Frame number">MapArray.At(Tile.ID % Map_x, Tile.ID/Map_x)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="297671692168915" title="TileSelection">
+            <sub-events>
+                <event-block sid="430199740782501">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="313170419110876" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">InvisibleButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="1" name="Unpin" sid="479117653528664" type="Selection" />
+                        <action id="-3" name="Set position" sid="743073956344751" type="Selection">
+                            <param id="0" name="X">InvisibleButton.X</param>
+                            <param id="1" name="Y">InvisibleButton.Y</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="257939084898145" type="TileBrush">
+                            <param id="0" name="Frame number">InvisibleButton.ID</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="933958597121473" type="Selection">
+                            <param id="0" name="Pin to">Frame</param>
+                            <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
                 </event-block>
