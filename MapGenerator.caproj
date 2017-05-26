@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
@@ -192,6 +193,12 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Mouse" sid="645195946993710">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="CheckMap" sid="304496923934957">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families>
         <family name="FrameFamily" plugin-id="Sprite" sid="490860488635042">
@@ -205,13 +212,16 @@
     </families>
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Function" uid="13" />
         <global-instance type="Keyboard" uid="31" />
+        <global-instance type="Mouse" uid="34" />
     </global-instances>
     <sounds-folder />
     <music-folder />
