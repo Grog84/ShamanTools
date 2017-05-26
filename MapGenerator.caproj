@@ -10,6 +10,7 @@
     <unique-id>2qwfejf377al</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
@@ -262,6 +263,17 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Load" sid="589465546881317">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Pin" sid="842944861966453">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="AJAX" sid="957678353431010">
+            <plugin id="AJAX" />
+        </object-type>
     </object-folder>
     <families>
         <family name="FrameFamily" plugin-id="Sprite" sid="490860488635042">
@@ -285,6 +297,7 @@
         <global-instance type="Function" uid="13" />
         <global-instance type="Keyboard" uid="31" />
         <global-instance type="Mouse" uid="34" />
+        <global-instance type="AJAX" uid="29" />
     </global-instances>
     <sounds-folder />
     <music-folder />
@@ -297,5 +310,6 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="Test1.json" />
     </files-folder>
 </c2project>

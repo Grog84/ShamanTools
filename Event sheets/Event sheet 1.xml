@@ -70,6 +70,10 @@
                     <param id="0" name="Pin to">Frame</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="271137848822677" type="Load">
+                    <param id="0" name="Pin to">Frame</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="409445775698906" title="FrameMovement">
@@ -301,6 +305,91 @@
                                     <param id="1" name="Parameter {n}">Map_x{###}Map_y</param>
                                 </action>
                                 <action id="0" name="Call function" sid="606270631644847" type="Function">
+                                    <param id="0" name="Name">&quot;FillWithEmptyTiles&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="844708366150111">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="504981767386994" type="Save" />
+                    </conditions>
+                    <actions>
+                        <action id="12" name="Download" sid="916885788100715" type="MapArray">
+                            <param id="0" name="Filename">FileName.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="373045144033942">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="793163868637496" type="Load" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="810865694475597" type="Tile" />
+                        <action id="1" name="Request project file" sid="699855753326005" type="AJAX">
+                            <param id="0" name="Tag">&quot;LoadMap&quot;</param>
+                            <param id="1" name="File">Test1.json</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="756333090004752">
+                    <conditions>
+                        <condition id="0" name="On completed" sid="629372512166159" type="AJAX">
+                            <param id="0" name="Tag">&quot;LoadMap&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Load" sid="643264542706325" type="MapArray">
+                            <param id="0" name="JSON">AJAX.LastData</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="631412859238987" type="System">
+                            <param id="0" name="Variable">CurrentLevelDump</param>
+                            <param id="1" name="Value">MapArray.AsJSON</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="911682440214957">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="946371113782367" type="LevelSize">
+                                    <param id="0" name="Instance variable">IDinstance</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="548615888153436" type="LevelSize">
+                                    <param id="0" name="Text">str(MapArray.Width)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="473207500334198" type="System">
+                                    <param id="0" name="Variable">Map_x</param>
+                                    <param id="1" name="Value">MapArray.Width</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="297480320588342">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="959526070331406" type="LevelSize">
+                                    <param id="0" name="Instance variable">IDinstance</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="278123102445922" type="LevelSize">
+                                    <param id="0" name="Text">str(MapArray.Height)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="687600318786994" type="System">
+                                    <param id="0" name="Variable">Map_y</param>
+                                    <param id="1" name="Value">MapArray.Height</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="706323818053223">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="312771595124071" type="Function">
                                     <param id="0" name="Name">&quot;FillWithEmptyTiles&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
