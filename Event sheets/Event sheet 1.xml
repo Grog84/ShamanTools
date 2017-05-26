@@ -3,6 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="CurrentLevelDump" sid="447889651693935" static="0" type="text"></variable>
+        <variable constant="1" name="X_OFFSET" sid="672447417247658" static="0" type="number">96</variable>
+        <variable constant="1" name="Y_OFFSET" sid="417412258568926" static="0" type="number">96</variable>
+        <variable constant="0" name="Map_x" sid="349233587194178" static="0" type="number">0</variable>
+        <variable constant="0" name="Map_y" sid="705398743728984" static="0" type="number">0</variable>
         <variable constant="0" name="Map_xlim" sid="188856971793343" static="0" type="number">0</variable>
         <variable constant="0" name="Map_ylim" sid="583598759851999" static="0" type="number">0</variable>
         <variable constant="1" name="MINSIZE_X" sid="155137997430583" static="0" type="number">22</variable>
@@ -55,15 +60,11 @@
                     <param id="0" name="Pin to">Frame</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="502430412664215" type="CheckMap">
+                    <param id="0" name="Pin to">Frame</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
-        </event-block>
-        <event-block sid="131643098443908">
-            <conditions>
-                <condition id="0" name="On function" sid="509692913081987" type="Function">
-                    <param id="0" name="Name">&quot;FillWithEmptyTiles&quot;</param>
-                </condition>
-            </conditions>
-            <actions />
         </event-block>
         <event-group description="" sid="409445775698906" title="FrameMovement">
             <sub-events>
@@ -127,17 +128,56 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="820364742355005">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="671043679043838" type="Frame">
+                            <param id="0" name="Object">XLimit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="539142400161642" type="Frame">
+                            <param id="0" name="X">XLimit.X - Self.Width/2.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="811459131717771">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="285681452918078" type="Frame">
+                            <param id="0" name="Object">YLimit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="793690345907322" type="Frame">
+                            <param id="0" name="Y">YLimit.Y - Self.Height/2.0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="317457071458983" title="Buttons">
             <sub-events>
+                <event-block sid="954488717271580">
+                    <conditions>
+                        <condition id="0" name="On function" sid="521457125792070" type="Function">
+                            <param id="0" name="Name">&quot;SetArraySize&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set size" sid="603230572112444" type="MapArray">
+                            <param id="0" name="Width">Function.Param(0)</param>
+                            <param id="1" name="Height">Function.Param(1)</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="456627827422706">
                     <conditions>
                         <condition id="0" name="On clicked" sid="545019966438107" type="NewLayout" />
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="386062280617178" type="System">
-                            <param id="0" name="Layout">Layout 2</param>
+                        <action id="-3" name="Set position" sid="474768368540223" type="Frame">
+                            <param id="0" name="X">960</param>
+                            <param id="1" name="Y">540</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -269,7 +309,103 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="110298074149370">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="704050940494275" type="System">
+                                    <param id="0" name="Variable">Map_x</param>
+                                    <param id="1" name="Value">Map_xlim - 8</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="835591697256634" type="System">
+                                    <param id="0" name="Variable">Map_y</param>
+                                    <param id="1" name="Value">Map_ylim - 2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="532510085082203" type="Function">
+                                    <param id="0" name="Name">&quot;SetArraySize&quot;</param>
+                                    <param id="1" name="Parameter {n}">Map_x{###}Map_y</param>
+                                </action>
+                                <action id="0" name="Call function" sid="606270631644847" type="Function">
+                                    <param id="0" name="Name">&quot;FillWithEmptyTiles&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="248614570370413" title="TilePlacing">
+            <sub-events>
+                <event-block sid="131643098443908">
+                    <conditions>
+                        <condition id="0" name="On function" sid="509692913081987" type="Function">
+                            <param id="0" name="Name">&quot;FillWithEmptyTiles&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="localID" sid="650548976249073" static="0" type="number">0</variable>
+                        <event-block sid="883145174744287">
+                            <conditions>
+                                <condition id="-10" name="For" sid="309519744876966" type="System">
+                                    <param id="0" name="Name">&quot;XTileIdx&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">Map_x - 1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="146124135871132">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="908773920714329" type="System">
+                                            <param id="0" name="Name">&quot;YTileIdx&quot;</param>
+                                            <param id="1" name="Start index">0</param>
+                                            <param id="2" name="End index">Map_y - 1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="644486855589078" type="System">
+                                            <param id="0" name="Object to create">Tile</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">X_OFFSET + loopindex(&quot;XTileIdx&quot;) * TILESIZE</param>
+                                            <param id="3" name="Y">Y_OFFSET + loopindex(&quot;YTileIdx&quot;) * TILESIZE</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="177128398641575" type="Tile">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Value">localID</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="827826109051261" type="System">
+                                            <param id="0" name="Variable">localID</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="834037368698770" title="ArraySaving">
+            <sub-events>
+                <event-block sid="390438907359282">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="295606606344041" type="MapArray">
+                            <param id="0" name="Instance variable">IsModified</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="457703039811078" type="MapArray">
+                            <param id="0" name="Instance variable">IsModified</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="875138405943366" type="System">
+                            <param id="0" name="Variable">CurrentLevelDump</param>
+                            <param id="1" name="Value">MapArray.AsJSON</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

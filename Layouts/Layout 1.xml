@@ -29,13 +29,16 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="EmptyTile" uid="2">
+                <instance type="Tile" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <ID>0</ID>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -890,6 +893,9 @@
                         <id-optional></id-optional>
                         <checked>No</checked>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -908,12 +914,15 @@
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="Array" uid="1">
+        <instance type="MapArray" uid="1">
             <properties>
                 <width>10</width>
                 <height>1</height>
                 <depth>1</depth>
             </properties>
+            <instance-variables>
+                <IsModified>0</IsModified>
+            </instance-variables>
         </instance>
     </nonworld-instances>
     <effects />

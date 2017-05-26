@@ -68,11 +68,17 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type global="1" name="Array" sid="935558640881237">
+        <object-type global="1" name="MapArray" sid="935558640881237">
             <plugin id="Arr" />
+            <instance-variables>
+                <instance-variable name="IsModified" sid="867665485512356" type="number" />
+            </instance-variables>
         </object-type>
-        <object-type name="EmptyTile" sid="503869223170788">
+        <object-type name="Tile" sid="503869223170788">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="674505874472309" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179355171526313" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -198,6 +204,11 @@
         </object-type>
         <object-type name="CheckMap" sid="304496923934957">
             <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Pin" sid="189271674487705">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families>
