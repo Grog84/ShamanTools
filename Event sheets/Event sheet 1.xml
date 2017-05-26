@@ -10,8 +10,8 @@
         <variable constant="0" name="Map_y" sid="705398743728984" static="0" type="number">0</variable>
         <variable constant="0" name="Map_xlim" sid="188856971793343" static="0" type="number">0</variable>
         <variable constant="0" name="Map_ylim" sid="583598759851999" static="0" type="number">0</variable>
-        <variable constant="1" name="MINSIZE_X" sid="155137997430583" static="0" type="number">22</variable>
-        <variable constant="1" name="MINSIZE_Y" sid="149905189053418" static="0" type="number">18</variable>
+        <variable constant="1" name="MINSIZE_X" sid="155137997430583" static="0" type="number">20</variable>
+        <variable constant="1" name="MINSIZE_Y" sid="149905189053418" static="0" type="number">15</variable>
         <variable constant="1" name="MAXSIZE_X" sid="955872552888831" static="0" type="number">200</variable>
         <variable constant="1" name="MAXSIZE_Y" sid="922062876706189" static="0" type="number">100</variable>
         <variable constant="1" name="TILESIZE" sid="398755621085684" static="0" type="number">32</variable>
@@ -183,7 +183,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="474768368540223" type="Frame">
-                            <param id="0" name="X">400</param>
+                            <param id="0" name="X">448</param>
                             <param id="1" name="Y">272</param>
                         </action>
                     </actions>
@@ -210,16 +210,19 @@
                                         <condition id="-14" name="Compare variable" sid="266026489294033" type="System">
                                             <param id="0" name="Variable">xlim</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">30</param>
+                                            <param id="2" name="Value">MINSIZE_X</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-1" name="Set X" sid="130317876166023" type="XLimit">
-                                            <param id="0" name="X">30 * TILESIZE</param>
+                                            <param id="0" name="X">MINSIZE_X * TILESIZE + (8*TILESIZE)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="805260230585211" type="LevelSize">
+                                            <param id="0" name="Text">str(MINSIZE_X)</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="859521023292245" type="System">
-                                            <param id="0" name="Variable">Map_xlim</param>
-                                            <param id="1" name="Value">30</param>
+                                            <param id="0" name="Variable">Map_x</param>
+                                            <param id="1" name="Value">MINSIZE_X</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -229,25 +232,11 @@
                                     </conditions>
                                     <actions>
                                         <action id="-1" name="Set X" sid="693996663596043" type="XLimit">
-                                            <param id="0" name="X">xlim * TILESIZE</param>
+                                            <param id="0" name="X">xlim * TILESIZE + (8*TILESIZE)</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="561655617917149" type="System">
-                                            <param id="0" name="Variable">Map_xlim</param>
+                                            <param id="0" name="Variable">Map_x</param>
                                             <param id="1" name="Value">xlim</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="863875635802367">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="363048305137176" type="System">
-                                            <param id="0" name="Variable">xlim</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">MINSIZE_X</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="805260230585211" type="LevelSize">
-                                            <param id="0" name="Text">str(MINSIZE_X)</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -273,16 +262,19 @@
                                         <condition id="-14" name="Compare variable" sid="987535372066908" type="System">
                                             <param id="0" name="Variable">ylim</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">20</param>
+                                            <param id="2" name="Value">MINSIZE_Y</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-2" name="Set Y" sid="308162290689256" type="YLimit">
-                                            <param id="0" name="Y">20 * TILESIZE</param>
+                                            <param id="0" name="Y">MINSIZE_Y * TILESIZE + (4*TILESIZE)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="848964185972329" type="LevelSize">
+                                            <param id="0" name="Text">str(MINSIZE_Y)</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="439213480939521" type="System">
-                                            <param id="0" name="Variable">Map_ylim</param>
-                                            <param id="1" name="Value">20</param>
+                                            <param id="0" name="Variable">Map_y</param>
+                                            <param id="1" name="Value">MINSIZE_Y</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -292,25 +284,11 @@
                                     </conditions>
                                     <actions>
                                         <action id="-2" name="Set Y" sid="216023031709837" type="YLimit">
-                                            <param id="0" name="Y">ylim * TILESIZE</param>
+                                            <param id="0" name="Y">ylim * TILESIZE + (4*TILESIZE)</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="259532147598571" type="System">
-                                            <param id="0" name="Variable">Map_ylim</param>
+                                            <param id="0" name="Variable">Map_y</param>
                                             <param id="1" name="Value">ylim</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="875881728173517">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="758094452988858" type="System">
-                                            <param id="0" name="Variable">ylim</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">MINSIZE_Y</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="848964185972329" type="LevelSize">
-                                            <param id="0" name="Text">str(MINSIZE_Y)</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -319,14 +297,6 @@
                         <event-block sid="110298074149370">
                             <conditions />
                             <actions>
-                                <action id="-9" name="Set value" sid="704050940494275" type="System">
-                                    <param id="0" name="Variable">Map_x</param>
-                                    <param id="1" name="Value">Map_xlim - 16</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="835591697256634" type="System">
-                                    <param id="0" name="Variable">Map_y</param>
-                                    <param id="1" name="Value">Map_ylim - 4</param>
-                                </action>
                                 <action id="0" name="Call function" sid="532510085082203" type="Function">
                                     <param id="0" name="Name">&quot;SetArraySize&quot;</param>
                                     <param id="1" name="Parameter {n}">Map_x{###}Map_y</param>
@@ -384,6 +354,14 @@
                                         <action id="-10" name="Add to" sid="827826109051261" type="System">
                                             <param id="0" name="Variable">localID</param>
                                             <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="291224509808265" type="Tile">
+                                            <param id="0" name="Instance variable">Xpos</param>
+                                            <param id="1" name="Value">loopindex(&quot;XTileIdx&quot;)</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="945388276687238" type="Tile">
+                                            <param id="0" name="Instance variable">Ypos</param>
+                                            <param id="1" name="Value">loopindex(&quot;YTileIdx&quot;)</param>
                                         </action>
                                     </actions>
                                 </event-block>

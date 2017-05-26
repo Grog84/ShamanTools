@@ -30,7 +30,7 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>800</width>
+        <width>896</width>
         <height>544</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
@@ -78,6 +78,8 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="ID" sid="674505874472309" type="number" />
+                <instance-variable name="Xpos" sid="168541562414580" type="number" />
+                <instance-variable name="Ypos" sid="989342808153220" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179355171526313" speed="5">
