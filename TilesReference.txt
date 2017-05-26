@@ -1,0 +1,5 @@
+12800 200*64
+6400 100*64
+7 tile frame right
+13312 = 12800 + 8*64 (7 del frame dx piu una dal frame sx)
+6272 = 6400 - 2*64 (Le tile del frame sopra e sotto)

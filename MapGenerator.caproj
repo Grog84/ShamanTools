@@ -13,11 +13,17 @@
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -47,9 +53,17 @@
     <object-folder>
         <object-type name="Frame" sid="289534348470443">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="947269504367702">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="661110982999189">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285823860601079" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -66,24 +80,54 @@
         </object-type>
         <object-type name="LevelSizeTxt" sid="689961379816956">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="972374316025996">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="LevelSize" sid="984664054025200">
             <plugin id="TextBox" />
             <instance-variables>
                 <instance-variable name="IDinstance" sid="591026617161478" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="674387846184964">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="NewLayout" sid="613090878884223">
             <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Pin" sid="801957310036046">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="Save" sid="309976861538941">
             <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Pin" sid="948656409172500">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="FileName" sid="750794175020781">
             <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Pin" sid="580309116117335">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="TileFrame" sid="867253811678417">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="986192070707385">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690096587469720" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -93,8 +137,72 @@
         <object-type name="Function" sid="393838783436076">
             <plugin id="Function" />
         </object-type>
+        <object-type name="InvisibleButton" sid="848612983014359">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="471343271818496">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753438428055981" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Selection" sid="341328593370394">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="118460141891784">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="670297537365671" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507246" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="198336483521335">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="YLimit" sid="932769810313673">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="987300271356923">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="886234799584894" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="XLimit" sid="206271586541084">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="104201336657873">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="203521826755082" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="FrameFamily" plugin-id="Sprite" sid="490860488635042">
+            <members>
+                <member>Frame</member>
+                <member>InvisibleButton</member>
+                <member>Selection</member>
+                <member>TileFrame</member>
+            </members>
+        </family>
+    </families>
     <layout-folder>
         <layout>Layout 1.xml</layout>
     </layout-folder>
@@ -103,6 +211,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Function" uid="13" />
+        <global-instance type="Keyboard" uid="31" />
     </global-instances>
     <sounds-folder />
     <music-folder />
