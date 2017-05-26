@@ -531,20 +531,6 @@
                             <param id="1" name="Value">MapArray.AsJSON</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="946256881428481">
-                            <conditions>
-                                <condition id="-11" name="For Each" sid="746906466142275" type="System">
-                                    <param id="0" name="Object">Tile</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="209647402383313" type="Tile">
-                                    <param id="0" name="Frame number">MapArray.At(Tile.ID % Map_x, Tile.ID/Map_x)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
