@@ -3,16 +3,58 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
     <events>
+        <include>Event sheet 1</include>
         <event-block sid="100441566280142">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="257971310546835" type="System" />
             </conditions>
             <actions>
-                <action id="-3" name="Create object" sid="243747798536466" type="System">
-                    <param id="0" name="Object to create">YLimit</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">0</param>
-                    <param id="3" name="Y">CurrBrush</param>
+                <action id="0" name="Call function" sid="825468401737101" type="Function">
+                    <param id="0" name="Name">&quot;FillWithEmptyTiles&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="232474107735502" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Call function" sid="566911349057312" type="Function">
+                    <param id="0" name="Name">&quot;UpdateMapFromArray&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="539662449195452">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="165363742223619" type="Keyboard">
+                    <param id="0" name="Key">107 (PiÙ (tn))</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Set layer scale" sid="903029076378395" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Scale">LayerScale(0) + 0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="917173909482948">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="909239850621687" type="Keyboard">
+                    <param id="0" name="Key">109 (- (tn))</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Set layer scale" sid="556302924842732" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Scale">LayerScale(0) - 0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="207630656694644">
+            <conditions>
+                <condition id="0" name="On clicked" sid="682628242707281" type="BackToEditor" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="157365720824696" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
                 </action>
             </actions>
         </event-block>

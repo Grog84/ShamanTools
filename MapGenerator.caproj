@@ -274,6 +274,20 @@
         <object-type name="AJAX" sid="957678353431010">
             <plugin id="AJAX" />
         </object-type>
+        <object-type name="Text" sid="157354946381371">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Update" sid="637574446349040">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Pin" sid="248342833935945">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="BackToEditor" sid="673023657874044">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families>
         <family name="FrameFamily" plugin-id="Sprite" sid="490860488635042">

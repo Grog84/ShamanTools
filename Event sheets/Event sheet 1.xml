@@ -74,7 +74,41 @@
                     <param id="0" name="Pin to">Frame</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="322998915496630" type="Update">
+                    <param id="0" name="Pin to">Frame</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
+            <sub-events>
+                <event-block sid="830595792800968">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="260609790119963" type="System">
+                            <param id="0" name="Variable">CurrentLevelDump</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="371464659934347" type="Function">
+                            <param id="0" name="Name">&quot;FillWithEmptyTiles&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="218732276591539" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="804712262342857" type="Function">
+                            <param id="0" name="Name">&quot;UpdateMapFromArray&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-1" name="Set X" sid="772999333231076" type="XLimit">
+                            <param id="0" name="X">Map_x*TILESIZE + (8*TILESIZE)</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="268822408684552" type="YLimit">
+                            <param id="0" name="Y">Map_y*TILESIZE + (4*TILESIZE)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-group description="" sid="409445775698906" title="FrameMovement">
             <sub-events>
@@ -366,6 +400,9 @@
                                     <param id="0" name="Variable">Map_x</param>
                                     <param id="1" name="Value">MapArray.Width</param>
                                 </action>
+                                <action id="-1" name="Set X" sid="435945838626412" type="XLimit">
+                                    <param id="0" name="X">Map_x * TILESIZE + (8*TILESIZE)</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="297480320588342">
@@ -384,6 +421,9 @@
                                     <param id="0" name="Variable">Map_y</param>
                                     <param id="1" name="Value">MapArray.Height</param>
                                 </action>
+                                <action id="-2" name="Set Y" sid="159392808190585" type="YLimit">
+                                    <param id="0" name="Y">Map_y * TILESIZE + (4*TILESIZE)</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="706323818053223">
@@ -393,9 +433,262 @@
                                     <param id="0" name="Name">&quot;FillWithEmptyTiles&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
+                                <action id="-16" name="Wait" sid="670570818431733" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Call function" sid="165588494244890" type="Function">
+                                    <param id="0" name="Name">&quot;UpdateMapFromArray&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="575468784517329">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="578089673971951" type="Update" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="xlim" sid="935554317339909" static="0" type="number">0</variable>
+                        <variable constant="0" name="ylim" sid="733042723424170" static="0" type="number">0</variable>
+                        <variable constant="0" name="oldMap_x" sid="222564567921285" static="0" type="number">0</variable>
+                        <variable constant="0" name="oldMap_y" sid="928162882568505" static="0" type="number">0</variable>
+                        <event-block sid="432726974744581">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="171045597821610" type="System">
+                                    <param id="0" name="Variable">oldMap_x</param>
+                                    <param id="1" name="Value">Map_x</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="435329334982981" type="System">
+                                    <param id="0" name="Variable">oldMap_y</param>
+                                    <param id="1" name="Value">Map_y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="139789488932872">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="361902440188219" type="LevelSize">
+                                    <param id="0" name="Instance variable">IDinstance</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="522733168737187" type="System">
+                                    <param id="0" name="Variable">xlim</param>
+                                    <param id="1" name="Value">int(LevelSize.Text)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="856863361773457">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="145805856146772" type="System">
+                                            <param id="0" name="Variable">xlim</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">MINSIZE_X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="660081445042757" type="XLimit">
+                                            <param id="0" name="X">MINSIZE_X * TILESIZE + (8*TILESIZE)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="267478568767494" type="LevelSize">
+                                            <param id="0" name="Text">str(MINSIZE_X)</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="460791224480201" type="System">
+                                            <param id="0" name="Variable">xlim</param>
+                                            <param id="1" name="Value">MINSIZE_X</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="607468598769208">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="650801916021494" type="System">
+                                            <param id="0" name="Variable">xlim</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">MINSIZE_X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="551676020606443" type="XLimit">
+                                            <param id="0" name="X">xlim * TILESIZE + (8*TILESIZE)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="206043994913882">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="365509239675117" type="System">
+                                            <param id="0" name="Variable">xlim</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">oldMap_x</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="139073491056277">
+                                            <conditions>
+                                                <condition id="-1" name="Compare X" sid="539669927860684" type="Tile">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="X co-ordinate">xlim*TILESIZE + 2*TILESIZE</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="654604905983849" type="Tile" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="484972040345351">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="105403134384824" type="System">
+                                            <param id="0" name="Variable">Map_x</param>
+                                            <param id="1" name="Value">xlim</param>
+                                        </action>
+                                        <action id="1" name="Set size" sid="300871943291317" type="MapArray">
+                                            <param id="0" name="Width">Map_x</param>
+                                            <param id="1" name="Height">Self.Height</param>
+                                            <param id="2" name="Depth">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="225469390990992">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="286594253865087" type="LevelSize">
+                                    <param id="0" name="Instance variable">IDinstance</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="909558946625432" type="System">
+                                    <param id="0" name="Variable">ylim</param>
+                                    <param id="1" name="Value">int(LevelSize.Text)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="590892258690109">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="276168853074819" type="System">
+                                            <param id="0" name="Variable">ylim</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">MINSIZE_Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="298650047938144" type="YLimit">
+                                            <param id="0" name="Y">MINSIZE_Y * TILESIZE + (4*TILESIZE)</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="247332328521613" type="LevelSize">
+                                            <param id="0" name="Text">str(MINSIZE_Y)</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="752038374245045" type="System">
+                                            <param id="0" name="Variable">ylim</param>
+                                            <param id="1" name="Value">MINSIZE_Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="821942592987905">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="622898607557335" type="System">
+                                            <param id="0" name="Variable">ylim</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">MINSIZE_Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="788012549944260" type="YLimit">
+                                            <param id="0" name="Y">ylim * TILESIZE + (4*TILESIZE)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="591597267201597">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="109101339872950" type="System">
+                                            <param id="0" name="Variable">ylim</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">oldMap_y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="103206115067216">
+                                            <conditions>
+                                                <condition id="-2" name="Compare Y" sid="158786866841808" type="Tile">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="Y co-ordinate">ylim*TILESIZE + 2*TILESIZE</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="488906810388376" type="Tile" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="826636719228556">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="697812499847650" type="System">
+                                            <param id="0" name="Variable">Map_y</param>
+                                            <param id="1" name="Value">ylim</param>
+                                        </action>
+                                        <action id="1" name="Set size" sid="282325117933092" type="MapArray">
+                                            <param id="0" name="Width">self.Width</param>
+                                            <param id="1" name="Height">Map_y</param>
+                                            <param id="2" name="Depth">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="587567242642470">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="431386870529667" type="System">
+                                    <param id="0" name="Variable">xlim</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">oldMap_x</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="826662522867269" type="System">
+                                    <param id="0" name="Variable">ylim</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">oldMap_y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="165182956018565" type="MapArray">
+                                    <param id="0" name="Width">xlim</param>
+                                    <param id="1" name="Height">ylim</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="700750286895493" type="Tile" />
+                                <action id="0" name="Call function" sid="205370111614890" type="Function">
+                                    <param id="0" name="Name">&quot;FillWithEmptyTiles&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="399523402100579" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Call function" sid="380635215400664" type="Function">
+                                    <param id="0" name="Name">&quot;UpdateMapFromArray&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="353325782330776">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="602153233202442" type="CheckMap" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="110223219837135" type="System">
+                            <param id="0" name="Layout">Layout 2</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -595,6 +888,59 @@
                                     <param id="0" name="Frame number">CurrBrush</param>
                                 </action>
                             </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="242646632237732">
+                    <conditions>
+                        <condition id="0" name="On function" sid="372005142252256" type="Function">
+                            <param id="0" name="Name">&quot;UpdateMapFromArray&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="localID" sid="922593949494498" static="0" type="number">0</variable>
+                        <event-block sid="765955656649497">
+                            <conditions>
+                                <condition id="-10" name="For" sid="356222011308743" type="System">
+                                    <param id="0" name="Name">&quot;XTileIdx&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">Map_x - 1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="716418747299196">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="256477085944336" type="System">
+                                            <param id="0" name="Name">&quot;YTileIdx&quot;</param>
+                                            <param id="1" name="Start index">0</param>
+                                            <param id="2" name="End index">Map_y - 1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="422439810409543">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="217649968028581" type="Tile">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">localID</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="5" name="Set frame" sid="780659653688062" type="Tile">
+                                                    <param id="0" name="Frame number">MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;))</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="661396340574858" type="System">
+                                                    <param id="0" name="Variable">localID</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
