@@ -774,9 +774,8 @@
                 </event-block>
                 <event-block sid="796058352549820">
                     <conditions>
-                        <condition id="0" name="On click" sid="132320279903706" type="Mouse">
+                        <condition id="2" name="Mouse button is down" sid="132320279903706" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
                         </condition>
                         <condition id="7" name="Cursor is over object" sid="432544203244580" type="Mouse">
                             <param id="0" name="Object">Tile</param>
@@ -880,9 +879,14 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action behavior="Pin" id="1" name="Unpin" sid="238022745995328" type="Selection" />
                                 <action id="-3" name="Set position" sid="619240652247267" type="Selection">
                                     <param id="0" name="X">InvisibleButton.X</param>
                                     <param id="1" name="Y">InvisibleButton.Y</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="568980450224169" type="Selection">
+                                    <param id="0" name="Pin to">Frame</param>
+                                    <param id="1" name="Mode">0</param>
                                 </action>
                                 <action id="5" name="Set frame" sid="215297546531839" type="TileBrush">
                                     <param id="0" name="Frame number">CurrBrush</param>
