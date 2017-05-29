@@ -1128,7 +1128,7 @@
                             <param id="1" name="Y">InvisibleButton.Y</param>
                         </action>
                         <action id="5" name="Set frame" sid="257939084898145" type="TileBrush">
-                            <param id="0" name="Frame number">InvisibleButton.ID</param>
+                            <param id="0" name="Frame number">(int(InvisibleButton.ID/100)-1)*TILESPERTAB + InvisibleButton.ID%100</param>
                         </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="933958597121473" type="Selection">
                             <param id="0" name="Pin to">Frame</param>
