@@ -253,6 +253,7 @@
                         <condition id="0" name="On clicked" sid="545019966438107" type="NewLayout" />
                     </conditions>
                     <actions>
+                        <action id="-9" name="Destroy" sid="140876192430347" type="Tile" />
                         <action id="-3" name="Set position" sid="474768368540223" type="Frame">
                             <param id="0" name="X">448</param>
                             <param id="1" name="Y">272</param>
