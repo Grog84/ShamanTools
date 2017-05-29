@@ -3,6 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="TileSelectParkPos_Y" sid="163901732787385" static="0" type="number">-150</variable>
+        <variable constant="0" name="TileSelectPos_X" sid="802344410087091" static="0" type="number">800</variable>
+        <variable constant="0" name="TileSelectPos_Y" sid="772051507117331" static="0" type="number">320</variable>
+        <variable constant="1" name="tilesPerTab" sid="556646797952646" static="0" type="number">19</variable>
+        <variable constant="0" name="SelectedTab" sid="450869700638680" static="0" type="number">1</variable>
         <variable constant="0" name="CurrentLevelDump" sid="447889651693935" static="0" type="text"></variable>
         <variable constant="1" name="X_OFFSET" sid="672447417247658" static="0" type="number">80</variable>
         <variable constant="1" name="Y_OFFSET" sid="417412258568926" static="0" type="number">80</variable>
@@ -26,10 +31,6 @@
                 <action id="7" name="Set CSS style" sid="340534917012982" type="FileName">
                     <param id="0" name="Property name">&quot;font-size&quot;</param>
                     <param id="1" name="Value">&quot;20&quot;</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="910200039884197" type="InvisibleButton">
-                    <param id="0" name="Pin to">Frame</param>
-                    <param id="1" name="Mode">1</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="226856828604699" type="FileName">
                     <param id="0" name="Pin to">Frame</param>
@@ -64,7 +65,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="5" name="Set frame" sid="351236989963961" type="InvisibleButton">
-                    <param id="0" name="Frame number">Self.ID</param>
+                    <param id="0" name="Frame number">(int(Self.ID/100) - 1)* TILESPERTAB + self.ID%100</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="361733960041951" type="BrushArea">
                     <param id="0" name="Pin to">Frame</param>
@@ -75,6 +76,14 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="322998915496630" type="Update">
+                    <param id="0" name="Pin to">Frame</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="241599190624617" type="TabNbr">
+                    <param id="0" name="Pin to">Frame</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="167108055813654" type="TabSelection">
                     <param id="0" name="Pin to">Frame</param>
                     <param id="1" name="Mode">0</param>
                 </action>
@@ -107,6 +116,31 @@
                             <param id="0" name="Y">Map_y*TILESIZE + (4*TILESIZE)</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="656061178570050">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="658391988999714" type="System">
+                            <param id="0" name="Object">InvisibleButton</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="971761406899861">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="519292751114457" type="TileFrame">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">int(InvisibleButton.ID/100)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="910200039884197" type="InvisibleButton">
+                                    <param id="0" name="Pin to">TileFrame</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -975,6 +1009,110 @@
         </event-group>
         <event-group description="" sid="297671692168915" title="TileSelection">
             <sub-events>
+                <event-group description="" sid="772933022882742" title="Tabs">
+                    <sub-events>
+                        <event-block sid="560895062521302">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="109195486079832" type="Keyboard">
+                                    <param id="0" name="Key">49 (1)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="200226156975386" type="Function">
+                                    <param id="0" name="Name">&quot;SwitchTab&quot;</param>
+                                    <param id="1" name="Parameter {n}">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="968237122085767">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="333664180544229" type="Keyboard">
+                                    <param id="0" name="Key">50 (2)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="634322162173569" type="Function">
+                                    <param id="0" name="Name">&quot;SwitchTab&quot;</param>
+                                    <param id="1" name="Parameter {n}">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="907444362710872">
+                            <conditions>
+                                <condition id="0" name="On function" sid="351432837934554" type="Function">
+                                    <param id="0" name="Name">&quot;SwitchTab&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="348656222096571" type="System">
+                                    <param id="0" name="Variable">SelectedTab</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="525578201459731">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="171033141737664" type="TabNbr">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="1" name="Unpin" sid="453079150015050" type="TabSelection" />
+                                        <action id="-3" name="Set position" sid="478066830866982" type="TabSelection">
+                                            <param id="0" name="X">TabNbr.X</param>
+                                            <param id="1" name="Y">TabNbr.Y</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="287885049288740" type="TabSelection">
+                                            <param id="0" name="Pin to">Frame</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="364863968801778">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="806933768393195" type="TileFrame">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="1" name="Unpin" sid="512484261397163" type="TileFrame" />
+                                        <action id="-2" name="Set Y" sid="163135928475269" type="TileFrame">
+                                            <param id="0" name="Y">TileSelectParkPos_Y</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="329886657279722" type="TileFrame">
+                                            <param id="0" name="Pin to">Frame</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="392609123570072">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="439171858419550" type="TileFrame">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="1" name="Unpin" sid="522870431372033" type="TileFrame" />
+                                        <action id="-3" name="Set position" sid="762789964556465" type="TileFrame">
+                                            <param id="0" name="X">TileSelectPos_X</param>
+                                            <param id="1" name="Y">TileSelectPos_Y</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="386448496048920" type="TileFrame">
+                                            <param id="0" name="Pin to">Frame</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block sid="430199740782501">
                     <conditions>
                         <condition id="6" name="On object clicked" sid="313170419110876" type="Mouse">

@@ -136,6 +136,9 @@
         </object-type>
         <object-type name="TileFrame" sid="867253811678417">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="997449632402518" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="986192070707385">
                     <behavior id="Pin" />
@@ -162,7 +165,26 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="20" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753438428055981" speed="0">
+                <animation framecount="39" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753438428055981" speed="0">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
@@ -303,6 +325,44 @@
         </object-type>
         <object-type name="BackToEditor" sid="673023657874044">
             <plugin id="Button" />
+        </object-type>
+        <object-type name="TabNbr" sid="504647113267811">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="836398706210502" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="487637503101973">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="949074053077307" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TabSelection" sid="427032321566813">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="277541792976807">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="464578036767402" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
