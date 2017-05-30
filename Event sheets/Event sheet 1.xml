@@ -4,8 +4,8 @@
     <name>Event sheet 1</name>
     <events>
         <variable constant="0" name="TileSelectParkPos_Y" sid="163901732787385" static="0" type="number">-150</variable>
-        <variable constant="0" name="TileSelectPos_X" sid="802344410087091" static="0" type="number">800</variable>
-        <variable constant="0" name="TileSelectPos_Y" sid="772051507117331" static="0" type="number">320</variable>
+        <variable constant="0" name="TileSelectPos_X" sid="802344410087091" static="0" type="number">352</variable>
+        <variable constant="0" name="TileSelectPos_Y" sid="772051507117331" static="0" type="number">48</variable>
         <variable constant="1" name="tilesPerTab" sid="556646797952646" static="0" type="number">19</variable>
         <variable constant="0" name="SelectedTab" sid="450869700638680" static="0" type="number">1</variable>
         <variable constant="0" name="CurrentLevelDump" sid="447889651693935" static="0" type="text"></variable>
@@ -1101,8 +1101,8 @@
                                     <actions>
                                         <action behavior="Pin" id="1" name="Unpin" sid="522870431372033" type="TileFrame" />
                                         <action id="-3" name="Set position" sid="762789964556465" type="TileFrame">
-                                            <param id="0" name="X">TileSelectPos_X</param>
-                                            <param id="1" name="Y">TileSelectPos_Y</param>
+                                            <param id="0" name="X">TileSelectPos_X + Frame.X</param>
+                                            <param id="1" name="Y">TileSelectPos_Y + Frame.Y</param>
                                         </action>
                                         <action behavior="Pin" id="0" name="Pin to object" sid="386448496048920" type="TileFrame">
                                             <param id="0" name="Pin to">Frame</param>
