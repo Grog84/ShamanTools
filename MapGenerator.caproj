@@ -152,8 +152,30 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\pianta1.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.4375" y="0.5" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\pianta2.png">
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.28125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.71875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -428,8 +450,30 @@
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\dbga_55\Downloads\pianta1.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.4375" y="0.5" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\dbga_55\Downloads\pianta2.png">
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.28125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.71875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
@@ -699,8 +743,30 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\pianta1.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.4375" y="0.5" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\pianta2.png">
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.28125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.71875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
