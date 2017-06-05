@@ -1147,15 +1147,154 @@
                                                     <param id="2" name="Value">localID</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="5" name="Set frame" sid="780659653688062" type="Tile">
-                                                    <param id="0" name="Frame number">MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;))</param>
-                                                </action>
-                                                <action id="-10" name="Add to" sid="661396340574858" type="System">
-                                                    <param id="0" name="Variable">localID</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="703868501810495">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="902860589420538" type="System">
+                                                            <param id="0" name="First value">int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) / 1000)</param>
+                                                            <param id="1" name="Comparison">5</param>
+                                                            <param id="2" name="Second value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="426243901495178">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="353485613445360" type="System">
+                                                                    <param id="0" name="First value">int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) / 1000)</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Second value">1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="5" name="Set frame" sid="621756780521027" type="Tile">
+                                                                    <param id="0" name="Frame number">49</param>
+                                                                </action>
+                                                                <action id="0" name="Spawn another object" sid="304019144987196" type="Tile">
+                                                                    <param id="0" name="Object">TextAttribute</param>
+                                                                    <param id="1" name="Layer">0</param>
+                                                                    <param id="2" name="Image point">0</param>
+                                                                </action>
+                                                                <action id="0" name="Set text" sid="451278236276828" type="TextAttribute">
+                                                                    <param id="0" name="Text">str(int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) % 1000))</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="364546074818522">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="720778627950797" type="System">
+                                                                    <param id="0" name="First value">int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) / 2000)</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Second value">1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="5" name="Set frame" sid="475513810519865" type="Tile">
+                                                                    <param id="0" name="Frame number">140</param>
+                                                                </action>
+                                                                <action id="0" name="Spawn another object" sid="327955228101314" type="Tile">
+                                                                    <param id="0" name="Object">TextAttribute</param>
+                                                                    <param id="1" name="Layer">0</param>
+                                                                    <param id="2" name="Image point">0</param>
+                                                                </action>
+                                                                <action id="0" name="Set text" sid="221425157919011" type="TextAttribute">
+                                                                    <param id="0" name="Text">str(int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) % 1000))</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="823573201133434">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="750451714170827" type="System">
+                                                                    <param id="0" name="First value">int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) / 3000)</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Second value">1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="5" name="Set frame" sid="581733783765913" type="Tile">
+                                                                    <param id="0" name="Frame number">164</param>
+                                                                </action>
+                                                                <action id="0" name="Spawn another object" sid="257790510356257" type="Tile">
+                                                                    <param id="0" name="Object">TextAttribute</param>
+                                                                    <param id="1" name="Layer">0</param>
+                                                                    <param id="2" name="Image point">0</param>
+                                                                </action>
+                                                                <action id="0" name="Set text" sid="597002757420239" type="TextAttribute">
+                                                                    <param id="0" name="Text">str(int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) % 1000))</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="348695757216116">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="464134220227970" type="System">
+                                                                    <param id="0" name="First value">int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) / 4000)</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Second value">1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="5" name="Set frame" sid="265106672888024" type="Tile">
+                                                                    <param id="0" name="Frame number">165</param>
+                                                                </action>
+                                                                <action id="0" name="Spawn another object" sid="727265627178254" type="Tile">
+                                                                    <param id="0" name="Object">TextAttribute</param>
+                                                                    <param id="1" name="Layer">0</param>
+                                                                    <param id="2" name="Image point">0</param>
+                                                                </action>
+                                                                <action id="0" name="Set text" sid="125331904858118" type="TextAttribute">
+                                                                    <param id="0" name="Text">str(int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) % 1000))</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="321399900601954">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="693054056957318" type="System">
+                                                                    <param id="0" name="First value">int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) / 5000)</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Second value">1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="5" name="Set frame" sid="606901000177035" type="Tile">
+                                                                    <param id="0" name="Frame number">166</param>
+                                                                </action>
+                                                                <action id="0" name="Spawn another object" sid="361171643647966" type="Tile">
+                                                                    <param id="0" name="Object">TextAttribute</param>
+                                                                    <param id="1" name="Layer">0</param>
+                                                                    <param id="2" name="Image point">0</param>
+                                                                </action>
+                                                                <action id="0" name="Set text" sid="231693220318990" type="TextAttribute">
+                                                                    <param id="0" name="Text">str(int(MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;)) % 1000))</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="456096967612562">
+                                                            <conditions />
+                                                            <actions>
+                                                                <action id="-10" name="Add to" sid="585920059020256" type="System">
+                                                                    <param id="0" name="Variable">localID</param>
+                                                                    <param id="1" name="Value">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                                <event-block sid="786631864114451">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="679282722173989" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="780659653688062" type="Tile">
+                                                            <param id="0" name="Frame number">MapArray.At(loopindex(&quot;XTileIdx&quot;), loopindex(&quot;YTileIdx&quot;))</param>
+                                                        </action>
+                                                        <action id="-10" name="Add to" sid="661396340574858" type="System">
+                                                            <param id="0" name="Variable">localID</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
