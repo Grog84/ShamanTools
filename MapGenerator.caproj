@@ -990,6 +990,14 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="TextAttribute" sid="520419614686751">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="140803161003967">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families>
         <family name="FrameFamily" plugin-id="Sprite" sid="490860488635042">

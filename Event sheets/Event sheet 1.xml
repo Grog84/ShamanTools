@@ -811,6 +811,22 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="103063402493088">
+                    <conditions>
+                        <condition id="2" name="Mouse button is down" sid="105288226774550" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="318721164061413" type="Mouse">
+                            <param id="0" name="Object">TextAttribute</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="703350281731314" type="Mouse">
+                            <param id="0" name="Object">BrushArea</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="278637038639671" type="TextAttribute" />
+                    </actions>
+                </event-block>
                 <event-block sid="796058352549820">
                     <conditions>
                         <condition id="2" name="Mouse button is down" sid="132320279903706" type="Mouse">
@@ -838,6 +854,14 @@
                                 <condition id="3" name="Compare frame" sid="232731705667419" type="TileBrush">
                                     <param id="0" name="Comparison">0</param>
                                     <param id="1" name="Number">164</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="694900379035023" type="TileBrush">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">165</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="268533649815755" type="TileBrush">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">166</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -901,6 +925,36 @@
                                                 </action>
                                             </actions>
                                         </event-block>
+                                        <event-block sid="810385981172631">
+                                            <conditions>
+                                                <condition id="3" name="Compare frame" sid="532291210778907" type="TileBrush">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">165</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="900930018315696" type="MapArray">
+                                                    <param id="0" name="X">Tile.Xpos</param>
+                                                    <param id="1" name="Y">Tile.Ypos</param>
+                                                    <param id="2" name="Value">4000 + int(Attribute.Text)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="135883525514969">
+                                            <conditions>
+                                                <condition id="3" name="Compare frame" sid="887177424866684" type="TileBrush">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">166</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="933555169948600" type="MapArray">
+                                                    <param id="0" name="X">Tile.Xpos</param>
+                                                    <param id="1" name="Y">Tile.Ypos</param>
+                                                    <param id="2" name="Value">5000 + int(Attribute.Text)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
                                         <event-block sid="894370295613300">
                                             <conditions />
                                             <actions>
@@ -910,6 +964,18 @@
                                                 <action id="-10" name="Set value" sid="596871706889173" type="MapArray">
                                                     <param id="0" name="Instance variable">IsModified</param>
                                                     <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="161236768645347" type="Tile">
+                                                    <param id="0" name="Object">TextAttribute</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Pin" id="0" name="Pin to object" sid="280104849077920" type="TextAttribute">
+                                                    <param id="0" name="Pin to">Tile</param>
+                                                    <param id="1" name="Mode">0</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="869014188690143" type="TextAttribute">
+                                                    <param id="0" name="Text">Attribute.Text</param>
                                                 </action>
                                             </actions>
                                         </event-block>
