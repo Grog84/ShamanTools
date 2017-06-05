@@ -6,7 +6,7 @@
         <variable constant="0" name="TileSelectParkPos_Y" sid="163901732787385" static="0" type="number">-150</variable>
         <variable constant="0" name="TileSelectPos_X" sid="802344410087091" static="0" type="number">352</variable>
         <variable constant="0" name="TileSelectPos_Y" sid="772051507117331" static="0" type="number">48</variable>
-        <variable constant="1" name="tilesPerTab" sid="556646797952646" static="0" type="number">19</variable>
+        <variable constant="1" name="TILESPERTAB" sid="556646797952646" static="0" type="number">20</variable>
         <variable constant="0" name="SelectedTab" sid="450869700638680" static="0" type="number">1</variable>
         <variable constant="0" name="CurrentLevelDump" sid="447889651693935" static="0" type="text"></variable>
         <variable constant="1" name="X_OFFSET" sid="672447417247658" static="0" type="number">80</variable>
@@ -1035,6 +1035,97 @@
                                 <action id="0" name="Call function" sid="634322162173569" type="Function">
                                     <param id="0" name="Name">&quot;SwitchTab&quot;</param>
                                     <param id="1" name="Parameter {n}">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="633057384383534">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="887522846994320" type="Keyboard">
+                                    <param id="0" name="Key">51 (3)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="527722845139720" type="Function">
+                                    <param id="0" name="Name">&quot;SwitchTab&quot;</param>
+                                    <param id="1" name="Parameter {n}">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="132884294044734">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="840587964215821" type="Keyboard">
+                                    <param id="0" name="Key">52 (4)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="974695511724786" type="Function">
+                                    <param id="0" name="Name">&quot;SwitchTab&quot;</param>
+                                    <param id="1" name="Parameter {n}">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="890959367290519">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="351732817615820" type="Keyboard">
+                                    <param id="0" name="Key">53 (5)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="872679289306425" type="Function">
+                                    <param id="0" name="Name">&quot;SwitchTab&quot;</param>
+                                    <param id="1" name="Parameter {n}">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="302858222256444">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="237791372215531" type="Keyboard">
+                                    <param id="0" name="Key">54 (6)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="862545518823691" type="Function">
+                                    <param id="0" name="Name">&quot;SwitchTab&quot;</param>
+                                    <param id="1" name="Parameter {n}">6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="135466769104821">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="466906975927254" type="Keyboard">
+                                    <param id="0" name="Key">55 (7)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="295498803014056" type="Function">
+                                    <param id="0" name="Name">&quot;SwitchTab&quot;</param>
+                                    <param id="1" name="Parameter {n}">7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="763717261049562">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="390351534111879" type="Keyboard">
+                                    <param id="0" name="Key">56 (8)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="324230594243675" type="Function">
+                                    <param id="0" name="Name">&quot;SwitchTab&quot;</param>
+                                    <param id="1" name="Parameter {n}">8</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="782622168081976">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="724623181403877" type="Keyboard">
+                                    <param id="0" name="Key">57 (9)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="652268828956978" type="Function">
+                                    <param id="0" name="Name">&quot;SwitchTab&quot;</param>
+                                    <param id="1" name="Parameter {n}">9</param>
                                 </action>
                             </actions>
                         </event-block>

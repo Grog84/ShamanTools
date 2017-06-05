@@ -83,7 +83,7 @@
                 <instance-variable name="Ypos" sid="989342808153220" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="41" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179355171526313" speed="0">
+                <animation framecount="180" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179355171526313" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -114,6 +114,163 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\tornado_singolo.png">
+                        <collision-poly>
+                            <point x="0.0967742" y="0.046875" />
+                            <point x="0.870968" y="0.0625" />
+                            <point x="0.741935" y="0.875" />
+                            <point x="0.483871" y="1" />
+                            <point x="0.580645" y="0.71875" />
+                            <point x="0.354839" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0967742" y="0.046875" />
+                            <point x="0.870968" y="0.0625" />
+                            <point x="0.741935" y="0.875" />
+                            <point x="0.483871" y="1" />
+                            <point x="0.580645" y="0.71875" />
+                            <point x="0.354839" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\8bit_bird.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\8bit_bird.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\8bit_fire_elemental.jpg" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -202,7 +359,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="41" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753438428055981" speed="0">
+                <animation framecount="180" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753438428055981" speed="0">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
@@ -233,6 +390,163 @@
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\dbga_55\Downloads\tornado_singolo.png">
+                        <collision-poly>
+                            <point x="0.0234375" y="0.046875" />
+                            <point x="0.976563" y="0.046875" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.9375" y="0.875" />
+                            <point x="0.140625" y="0.71875" />
+                            <point x="0.0859375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52">
+                        <collision-poly>
+                            <point x="0.0234375" y="0.046875" />
+                            <point x="0.976563" y="0.046875" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.9375" y="0.875" />
+                            <point x="0.140625" y="0.71875" />
+                            <point x="0.0859375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\dbga_55\Downloads\8bit_bird.jpg" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\dbga_55\Downloads\8bit_fire_elemental.jpg" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
@@ -316,7 +630,7 @@
         <object-type name="TileBrush" sid="197572044070674">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="41" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="187172350872731" speed="0">
+                <animation framecount="181" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="187172350872731" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -347,6 +661,164 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\tornado_singolo.png">
+                        <collision-poly>
+                            <point x="0.0967742" y="0.046875" />
+                            <point x="0.870968" y="0.0625" />
+                            <point x="0.741935" y="0.875" />
+                            <point x="0.483871" y="1" />
+                            <point x="0.580645" y="0.71875" />
+                            <point x="0.354839" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\tornado_singolo.png">
+                        <collision-poly>
+                            <point x="0.0967742" y="0.046875" />
+                            <point x="0.870968" y="0.0625" />
+                            <point x="0.741935" y="0.875" />
+                            <point x="0.483871" y="1" />
+                            <point x="0.580645" y="0.71875" />
+                            <point x="0.354839" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\8bit_bird.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\8bit_fire_elemental.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\8bit_fire_elemental.jpg" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
