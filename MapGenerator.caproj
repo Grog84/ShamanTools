@@ -982,6 +982,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Attribute" sid="631413089579984">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Pin" sid="171671915258056">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families>
         <family name="FrameFamily" plugin-id="Sprite" sid="490860488635042">
