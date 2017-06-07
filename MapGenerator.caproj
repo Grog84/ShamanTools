@@ -180,7 +180,16 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.424242" y="0.4375" />
+                            <point x="0.484848" y="0.40625" />
+                            <point x="0.757576" y="0.5" />
+                            <point x="0.909091" y="0.90625" />
+                            <point x="0.0909091" y="0.90625" />
+                            <point x="0.333333" y="0.5" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -694,7 +703,7 @@
         <object-type name="TileBrush" sid="197572044070674">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="181" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="187172350872731" speed="0">
+                <animation framecount="180" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="187172350872731" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -905,7 +914,6 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\8bit_fire_elemental.jpg" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_55\Downloads\8bit_fire_elemental.jpg" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
