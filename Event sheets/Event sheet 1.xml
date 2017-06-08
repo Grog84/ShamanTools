@@ -403,7 +403,7 @@
                         <action id="-9" name="Destroy" sid="810865694475597" type="Tile" />
                         <action id="1" name="Request project file" sid="699855753326005" type="AJAX">
                             <param id="0" name="Tag">&quot;LoadMap&quot;</param>
-                            <param id="1" name="File">Test1.json</param>
+                            <param id="1" name="File">SQLivelloMontagna.json</param>
                         </action>
                     </actions>
                 </event-block>
@@ -847,9 +847,17 @@
                                     <param id="0" name="Comparison">0</param>
                                     <param id="1" name="Number">49</param>
                                 </condition>
+                                <condition id="3" name="Compare frame" sid="940896655279760" type="TileBrush">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">55</param>
+                                </condition>
                                 <condition id="3" name="Compare frame" sid="112947616048875" type="TileBrush">
                                     <param id="0" name="Comparison">0</param>
                                     <param id="1" name="Number">140</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="647255220656823" type="TileBrush">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">141</param>
                                 </condition>
                                 <condition id="3" name="Compare frame" sid="232731705667419" type="TileBrush">
                                     <param id="0" name="Comparison">0</param>
@@ -952,6 +960,36 @@
                                                     <param id="0" name="X">Tile.Xpos</param>
                                                     <param id="1" name="Y">Tile.Ypos</param>
                                                     <param id="2" name="Value">5000 + int(Attribute.Text)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="743376738887506">
+                                            <conditions>
+                                                <condition id="3" name="Compare frame" sid="980925208859672" type="TileBrush">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">55</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="804148174064767" type="MapArray">
+                                                    <param id="0" name="X">Tile.Xpos</param>
+                                                    <param id="1" name="Y">Tile.Ypos</param>
+                                                    <param id="2" name="Value">6000 + int(Attribute.Text)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="122830513869279">
+                                            <conditions>
+                                                <condition id="3" name="Compare frame" sid="644657532317403" type="TileBrush">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">141</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="266398705653645" type="MapArray">
+                                                    <param id="0" name="X">Tile.Xpos</param>
+                                                    <param id="1" name="Y">Tile.Ypos</param>
+                                                    <param id="2" name="Value">7000 + int(Attribute.Text)</param>
                                                 </action>
                                             </actions>
                                         </event-block>

@@ -1043,5 +1043,6 @@
             <file name="loading-logo.png" />
         </file-folder>
         <file name="Test1.json" />
+        <file name="SQLivelloMontagna.json" />
     </files-folder>
 </c2project>
